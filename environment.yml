@@ -22,7 +22,7 @@ dependencies:
       - mesa
       - nltk
       - textblob
-      - jupyter-book
+      - jupyter-book<2
       - pyarrow
       - xgboost
       - nbval
