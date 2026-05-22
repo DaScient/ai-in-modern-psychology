@@ -1,0 +1,39 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Part I — Foundations of AI in Psychology
+    chapters:
+      - file: chapters/part1/ch01_history_ai_psychology
+      - file: chapters/part1/ch02_symbolic_connectionist
+      - file: chapters/part1/ch03_cognitive_architectures
+  - caption: Part II — AI as Research Tool
+    chapters:
+      - file: chapters/part2/ch04_digital_phenotyping
+      - file: chapters/part2/ch05_machine_learning_psych
+      - file: chapters/part2/ch06_memory_models
+      - file: chapters/part2/ch07_nlp_psychology
+  - caption: Part III — Clinical Applications
+    chapters:
+      - file: chapters/part3/ch08_diagnostic_applications
+      - file: chapters/part3/ch09_ai_psychotherapy
+      - file: chapters/part3/ch10_therapy_chatbots
+      - file: chapters/part3/ch11_clinical_decision
+      - file: chapters/part3/ch12_crisis_intervention
+  - caption: Part IV — I/O & Education
+    chapters:
+      - file: chapters/part4/ch13_hiring_bias
+      - file: chapters/part4/ch14_adaptive_learning
+      - file: chapters/part4/ch15_burnout_detection
+  - caption: Part V — Social & Cultural AI
+    chapters:
+      - file: chapters/part5/ch16_social_network_abm
+      - file: chapters/part5/ch17_network_influence
+      - file: chapters/part5/ch18_cultural_ai
+  - caption: Part VI — Real-World Deployment & Ethics
+    chapters:
+      - file: chapters/part6/ch19_recommender_systems
+      - file: chapters/part6/ch20_privacy_surveillance
+      - file: chapters/part6/ch21_regulation_governance
+      - file: chapters/part6/ch22_ethics_ai_psychology
+      - file: chapters/part6/ch23_data_governance
+      - file: chapters/part6/ch24_future_directions

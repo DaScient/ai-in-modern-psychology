@@ -1,0 +1,57 @@
+# Book settings
+title: AI in Modern Psychology
+author: Don D.M. Tadaya
+copyright: "2026"
+
+# Force re-execution of notebooks on each build is off (notebooks are pre-run)
+execute:
+  execute_notebooks: "off"
+
+# Add a bibtex file so we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/DaScient/ai-in-modern-psychology
+  path_to_book: book
+  branch: main
+
+# Add GitHub buttons to your book
+html:
+  use_issues_button: true
+  use_repository_button: true
+  home_page_in_navbar: true
+  extra_footer: |
+    <p>
+      Text licensed under
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+      | Code licensed under
+      <a href="https://opensource.org/licenses/MIT">MIT</a>
+    </p>
+
+# Launch button settings
+launch_buttons:
+  notebook_interface: "classic"
+  binderhub_url: "https://mybinder.org"
+  colab_url: "https://colab.research.google.com"
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
+
+sphinx:
+  config:
+    html_show_copyright: true
+    bibtex_reference_style: author_year
+    suppress_warnings: ["mystnb.unknown_mime_type"]
