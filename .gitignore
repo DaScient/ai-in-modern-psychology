@@ -42,3 +42,4 @@ data/*.parquet
 .venv/
 venv/
 env/
+_build/
