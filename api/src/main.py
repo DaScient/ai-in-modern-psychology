@@ -1,147 +1,177 @@
-"""FastAPI application entry point for AI in Biological Sciences API."""
+"""FastAPI entry point for the AI in Modern Psychology service.
 
-from fastapi import FastAPI, HTTPException, Depends
+The API surfaces the educational models that live under ``/code`` so that
+learners and contributors can experiment with them from HTTP clients, the
+Jupyter Book examples, or simple front-end demos. Every endpoint maps
+to a chapter of *AI in Modern Psychology* (DaScient Press, 2026).
+
+Run locally::
+
+    uvicorn api.src.main:app --reload
+
+Then open http://localhost:8000/docs for the interactive Swagger UI.
+"""
+
+from __future__ import annotations
+
+import logging
+from contextlib import asynccontextmanager
+
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.utils import get_openapi
-from contextlib import asynccontextmanager
-import logging
 
-# Configure logging
+from . import __version__
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
 @asynccontextmanager
-async def lifespan(app: FastAPI):
-    """Handle startup and shutdown events."""
-    logger.info("Starting AI Bio API...")
+async def lifespan(app: FastAPI):  # pragma: no cover - trivial lifecycle hook
+    """Startup / shutdown lifecycle hook."""
+    logger.info("Starting AI in Modern Psychology API v%s", __version__)
     yield
-    logger.info("Shutting down AI Bio API...")
+    logger.info("Shutting down AI in Modern Psychology API")
 
 
-app = FastAPI(
-    title="AI in Biological Sciences API",
-    description="""
-## Welcome to the AI Bio API
+DESCRIPTION = """
+## AI in Modern Psychology — Programmatic Workbench
 
-This API provides programmatic access to state-of-the-art AI models for
-biological research, aligned with the textbook "AI in Biological Sciences"
-(DaScient Press, 2025).
+This API exposes the educational models from the
+[`ai-in-modern-psychology`](https://github.com/DaScient/ai-in-modern-psychology)
+workbench as HTTP endpoints so that learners can experiment with them from
+notebooks, web demos, or scripted assignments.
 
-### Key Capabilities:
+It is a **teaching artefact**: every endpoint is intentionally simple,
+fully open source, and explicitly *not* validated for clinical or
+high-stakes use. Each route maps to a chapter of the companion book.
 
-- **Protein Structure**: AlphaFold2-level prediction and design
-- **Genomics**: Variant interpretation, regulatory element prediction
-- **Single-Cell**: Embeddings, trajectories, cell-type annotation
-- **Ecology**: Species distribution, tipping point detection
-- **Clinical**: Diagnosis, prognosis, treatment planning
-- **Drug Discovery**: Docking, de novo design, ADMET prediction
-- **Literature**: Hypothesis generation, knowledge graph mining
-- **Ethics**: Bias auditing, fairness metrics
+| Route prefix | Chapter | Underlying module |
+|--------------|---------|-------------------|
+| `/api/v1/memory` | Ch 6 — Memory models | `code.foundations.act_r_simulation` |
+| `/api/v1/safety` | Ch 10 — Therapy chatbots | `code.clinical.therapy_safety` |
+| `/api/v1/risk`   | Ch 8 / 11 — Diagnostic & decision support | `code.clinical.risk_prediction` |
+| `/api/v1/fairness` | Ch 13 / 22 — Bias auditing | `code.ethics.fairness_metrics` |
+| `/api/v1/learning` | Ch 14 — Adaptive learning | `code.io_ed.adaptive_learning` |
+| `/api/v1/social` | Ch 16 — Opinion dynamics | `code.social.polarization_abm` |
 
-### Authentication
+### Conventions
 
-Include your API key in the `X-API-Key` header:
-```bash
-curl -H "X-API-Key: your_key" https://api.bioai.dascient.com/health
-```
+* All endpoints accept and return JSON.
+* Numeric arrays are passed as plain JSON lists.
+* No authentication is required for the educational deployment; productionising
+  the service is left as an exercise (see `curriculum/assignments`).
 
-### Rate Limits
+### Safety
 
-| Tier | Requests/second | Monthly cap |
-|------|----------------|-------------|
-| Academic | 10 | 100,000 |
-| Commercial | 50 | 1,000,000 |
-| Enterprise | 500 | Unlimited |
-
-### Interactive Documentation
-
-- Swagger UI: `/docs`
-- ReDoc: `/redoc`
-
-### Versioning
-
-Current version: `v1`. Major versions introduce breaking changes.
-""",
-    version="1.0.0",
-    openapi_tags=[
-        {"name": "Protein", "description": "Protein structure and design"},
-        {"name": "Genomics", "description": "Genomic sequence analysis"},
-        {"name": "Single-Cell", "description": "Single-cell omics"},
-        {"name": "Ecology", "description": "Ecological modeling"},
-        {"name": "Clinical", "description": "Medical AI"},
-        {"name": "Drug", "description": "Drug discovery"},
-        {"name": "Literature", "description": "Literature mining"},
-        {"name": "Ethics", "description": "Bias auditing"},
-        {"name": "System", "description": "System status"},
-    ],
-    lifespan=lifespan,
-    docs_url="/docs",
-    redoc_url="/redoc",
-    openapi_url="/openapi.json",
-    contact={
-        "name": "DaScient Support",
-        "url": "https://dascient.com/support",
-        "email": "support@dascient.com",
-    },
-    license_info={
-        "name": "CC BY-NC-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    },
-)
-
-# CORS configuration
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-# Include routers
-from .endpoints import protein_router, single_cell_router  # noqa: E402
-
-app.include_router(protein_router.router, prefix="/api/v1/protein", tags=["Protein"])
-app.include_router(single_cell_router.router, prefix="/api/v1/scell", tags=["Single-Cell"])
+Endpoints that touch sensitive scenarios (crisis detection, risk prediction)
+always return *educational* output. They must not be used for triage,
+diagnosis, or any real-world decision-making.
+"""
 
 
-@app.get("/health", tags=["System"])
-async def health_check():
-    """Health check endpoint."""
-    return {"status": "healthy", "version": "1.0.0"}
-
-
-def custom_openapi():
-    """Custom OpenAPI schema with examples."""
-    if app.openapi_schema:
-        return app.openapi_schema
-
-    openapi_schema = get_openapi(
-        title=app.title,
-        version=app.version,
-        description=app.description,
-        routes=app.routes,
+def create_app() -> FastAPI:
+    """Application factory — kept separate so tests can rebuild a clean app."""
+    app = FastAPI(
+        title="AI in Modern Psychology API",
+        description=DESCRIPTION,
+        version=__version__,
+        openapi_tags=[
+            {"name": "Memory", "description": "ACT-R style declarative memory"},
+            {"name": "Safety", "description": "Therapy-chatbot crisis escalation"},
+            {"name": "Risk", "description": "Clinical risk prediction (educational)"},
+            {"name": "Fairness", "description": "Algorithmic-fairness audits"},
+            {"name": "Learning", "description": "Bayesian knowledge tracing"},
+            {"name": "Social", "description": "Opinion-dynamics agent-based models"},
+            {"name": "System", "description": "Health and metadata"},
+        ],
+        lifespan=lifespan,
+        docs_url="/docs",
+        redoc_url="/redoc",
+        openapi_url="/openapi.json",
+        contact={
+            "name": "AI in Modern Psychology — DaScient Press",
+            "url": "https://github.com/DaScient/ai-in-modern-psychology",
+        },
+        license_info={
+            "name": "MIT (code) / CC BY-NC-SA 4.0 (text)",
+            "url": "https://opensource.org/licenses/MIT",
+        },
     )
 
-    openapi_schema.setdefault("components", {})
-    openapi_schema["components"]["examples"] = {
-        "ProteinSequence": {
-            "value": {
-                "sequence": "MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDP"
-            }
-        },
-        "SingleCellMatrix": {
-            "value": {
-                "counts": [[0, 1, 2], [3, 0, 1], [2, 3, 0]],
-                "genes": ["GAPDH", "TP53", "BRCA1"],
-                "cells": ["cell_1", "cell_2", "cell_3"],
-            }
-        },
-    }
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["*"],
+        allow_credentials=False,
+        allow_methods=["GET", "POST", "OPTIONS"],
+        allow_headers=["*"],
+    )
 
-    app.openapi_schema = openapi_schema
-    return app.openapi_schema
+    # Import routers lazily to keep top-level import light during testing.
+    from .endpoints import (
+        fairness_router,
+        learning_router,
+        memory_router,
+        risk_router,
+        safety_router,
+        social_router,
+    )
+
+    app.include_router(memory_router.router, prefix="/api/v1/memory", tags=["Memory"])
+    app.include_router(safety_router.router, prefix="/api/v1/safety", tags=["Safety"])
+    app.include_router(risk_router.router, prefix="/api/v1/risk", tags=["Risk"])
+    app.include_router(fairness_router.router, prefix="/api/v1/fairness", tags=["Fairness"])
+    app.include_router(learning_router.router, prefix="/api/v1/learning", tags=["Learning"])
+    app.include_router(social_router.router, prefix="/api/v1/social", tags=["Social"])
+
+    @app.get("/health", tags=["System"], summary="Liveness probe")
+    async def health_check() -> dict:
+        """Return service health and version metadata."""
+        return {"status": "healthy", "version": __version__}
+
+    @app.get("/", tags=["System"], summary="Service index")
+    async def index() -> dict:
+        """Top-level metadata document linking to the docs and source."""
+        return {
+            "name": "AI in Modern Psychology API",
+            "version": __version__,
+            "docs": "/docs",
+            "redoc": "/redoc",
+            "openapi": "/openapi.json",
+            "source": "https://github.com/DaScient/ai-in-modern-psychology",
+        }
+
+    def custom_openapi() -> dict:
+        if app.openapi_schema:
+            return app.openapi_schema
+        schema = get_openapi(
+            title=app.title,
+            version=app.version,
+            description=app.description,
+            routes=app.routes,
+        )
+        schema.setdefault("components", {})
+        schema["components"]["examples"] = {
+            "SafetyMessage": {
+                "value": {"message": "I had a tough day at work but I'm OK."}
+            },
+            "BKTUpdate": {
+                "value": {"p_mastery": 0.1, "correct": True},
+            },
+            "FairnessAudit": {
+                "value": {
+                    "y_true": [1, 0, 1, 0, 1, 1, 0, 0],
+                    "y_pred": [1, 0, 1, 1, 0, 1, 0, 0],
+                    "sensitive": [0, 0, 0, 0, 1, 1, 1, 1],
+                }
+            },
+        }
+        app.openapi_schema = schema
+        return app.openapi_schema
+
+    app.openapi = custom_openapi
+    return app
 
 
-app.openapi = custom_openapi
+app = create_app()

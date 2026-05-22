@@ -15,19 +15,30 @@ This repository is the living companion to **"AI in Modern Psychology"** (Barnes
 - **Read the Living Book** → [GitHub Pages](https://DaScient.github.io/ai-in-modern-psychology) (auto-built from `/book`)
 - **Run a Notebook** → Click the Binder badge above — no installation required
 - **Explore Models** → [`/code`](./code) — Python implementations of key algorithms
-- **Ethics Toolkit** → [`/ethics_toolkit`](./ethics_toolkit) — templates for bias audits, model cards, consent
-- **Curriculum** → [`/curriculum`](./curriculum) — syllabi, assignments, and instructor materials
+- **Run the API** → [`/api/src/main.py`](./api/src/main.py) — FastAPI surface (`/memory`, `/safety`, `/risk`, `/fairness`, `/learning`, `/social/abm`)
+- **Ethics Toolkit** → [`/ethics_toolkit`](./ethics_toolkit) — bias audits, model cards, data governance, deployment-readiness checklist, AI disclosure template
+- **Curriculum** → [`/curriculum`](./curriculum) — syllabi and seven graded assignments
+- **Tests** → [`/tests`](./tests) — `pytest` smoke tests for every code module and API endpoint
 
 ## 🧠 What You'll Find Here
 
 | Part | Focus | Example Executable |
 |------|-------|---------------------|
 | I | Foundations | ACT-R memory simulation, symbolic vs. connectionist comparison |
-| II | AI as Research Tool | Depression detection from smartphone sensors, multi-modal fusion |
-| III | Clinical Applications | Suicide risk prediction + SHAP explanations, therapy chatbot safety |
-| IV | I/O & Education | Hiring bias audit, adaptive learning system, burnout detection |
-| V | Social & Cultural | Agent-based polarization models, network influence analysis |
-| VI | Real-World & Ethics | Recommender system addiction analysis, algorithmic fairness metrics |
+| II | AI as Research Tool | Digital-phenotyping pipeline, NLP/LIWC-style lexicon scoring, memory models |
+| III | Clinical Applications | Suicide risk prediction + SHAP, therapy-chatbot safety, decision-curve analysis |
+| IV | I/O & Education | Hiring-bias audit, BKT adaptive learning, burnout detection |
+| V | Social & Cultural | Bounded-confidence ABM, network-influence cascades + KKT greedy seeding, cultural AI |
+| VI | Real-World & Ethics | Recommender systems, privacy, regulation, ethics, data governance, future directions |
+
+### 🆕 New since the 2026 enrichment
+
+- **All 24 chapters** include Learning Objectives, Key Terms, Worked Examples, Hands-on Exercises, Case Studies, Common Pitfalls, Cross-Chapter Connections, and Further Reading.
+- **Notebooks**: `05_polarization_and_network_influence`, `06_nlp_lexicon_for_psychology`, `07_decision_curve_analysis`.
+- **Code modules**: `code/research/digital_phenotyping.py`, `code/research/nlp_psychology.py`, `code/social/network_influence.py`, `code/clinical/decision_curve.py`, plus a fleshed-out `code/foundations/symbolic_connectionist.py` and `code/io_ed/adaptive_learning.py`.
+- **API**: replaces the previous off-topic protein-folding stub with a coherent **Psychology API** wired to the in-repo modules.
+- **Ethics toolkit**: new `deployment_readiness_checklist.md` and `ai_disclosure_template.md`.
+- **Curriculum**: assignments 04 (digital phenotyping), 05 (decision-curve analysis), 06 (polarization ABM), 07 (NLP lexicon validation), plus an index in `curriculum/assignments/README.md`.
 
 ## 🚀 Getting Started
 
