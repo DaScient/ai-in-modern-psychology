@@ -1,0 +1,97 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-in-modern-psychology"
+version = "0.1.0"
+description = "Computational psychology workbench — companion repository to *AI in Modern Psychology* (DaScient Press, 2026)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Don D.M. Tadaya" },
+]
+keywords = [
+    "psychology",
+    "artificial-intelligence",
+    "machine-learning",
+    "computational-psychology",
+    "ethics",
+    "fairness",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+    "ipykernel",
+    "nbconvert",
+    "pyarrow",
+    "xgboost",
+    "shap",
+    "networkx",
+]
+
+[project.optional-dependencies]
+book = ["jupyter-book<2"]
+api = ["fastapi", "uvicorn[standard]", "pydantic"]
+nlp = ["nltk", "textblob", "transformers", "torch"]
+abm = ["mesa"]
+dev = ["ruff", "pytest", "nbval"]
+all = [
+    "jupyter-book<2",
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "nltk",
+    "textblob",
+    "transformers",
+    "torch",
+    "mesa",
+    "lime",
+    "ruff",
+    "pytest",
+    "nbval",
+]
+
+[project.urls]
+Homepage = "https://github.com/DaScient/ai-in-modern-psychology"
+Documentation = "https://DaScient.github.io/ai-in-modern-psychology"
+Repository = "https://github.com/DaScient/ai-in-modern-psychology"
+Issues = "https://github.com/DaScient/ai-in-modern-psychology/issues"
+
+[tool.setuptools]
+packages = [
+    "code",
+    "code.foundations",
+    "code.clinical",
+    "code.io_ed",
+    "code.social",
+    "code.ethics",
+    "code.utils",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501", "E402"]
+
+[tool.pytest.ini_options]
+testpaths = ["code", "tests"]
+addopts = "-q"

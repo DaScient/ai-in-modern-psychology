@@ -1,0 +1,29 @@
+name: aipsych
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyter
+  - ipykernel
+  - pip:
+      - torch
+      - transformers
+      - shap
+      - lime
+      - networkx
+      - mesa
+      - nltk
+      - textblob
+      - jupyter-book<2
+      - pyarrow
+      - xgboost
+      - nbval
+      - nbconvert

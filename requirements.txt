@@ -1,0 +1,33 @@
+# Runtime dependencies for AI in Modern Psychology.
+# Mirrors environment.yml so that pip-based tooling (CI setup steps,
+# Binder via pip, Codespaces) can install without conda.
+
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+jupyter
+ipykernel
+nbconvert
+nbval
+pyarrow
+
+# Modelling
+xgboost
+shap
+lime
+networkx
+mesa
+nltk
+textblob
+torch
+transformers
+
+# Book build
+jupyter-book<2
+
+# API layer (FastAPI entry point under api/)
+fastapi
+uvicorn[standard]
+pydantic
