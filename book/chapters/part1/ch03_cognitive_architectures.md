@@ -107,3 +107,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Newell, A. (1990). *Unified Theories of Cognition*. Harvard University Press.
 - Sun, R. (2016). *Anatomy of the Mind: Exploring Psychological Mechanisms and Processes with the Clarion Cognitive Architecture*. Oxford University Press.
 - Laird, J. (2012). *The Soar Cognitive Architecture*. MIT Press.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

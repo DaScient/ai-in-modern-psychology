@@ -102,3 +102,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Pisani, A. R., Kanuri, N., Filbin, B., Gallo, C., Gould, M., Lehmann, L. S., et al. (2019). Protecting user privacy and rights in academic data-sharing partnerships. *JMIR Mental Health*.
 - Sharma, A., et al. (2023). Human–AI collaboration enables more empathic conversations in text-based peer-to-peer mental health support. *Nature Machine Intelligence*.
 - Gould, M. S., et al. (2022). Helpful and harmful experiences with telephone crisis services. *Suicide and Life-Threatening Behavior*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

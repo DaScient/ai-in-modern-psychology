@@ -116,3 +116,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Miner, A. S., et al. (2016). Smartphone-based conversational agents and responses to questions about mental health. *JAMA Internal Medicine*, 176(5), 619–625.
 - De Choudhury, M., et al. (2023). Risks of Generative AI in Mental Health. *npj Mental Health Research*.
 - Vaidyam, A. N., et al. (2019). Chatbots and conversational agents in mental health. *Canadian Journal of Psychiatry*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

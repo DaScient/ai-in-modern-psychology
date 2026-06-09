@@ -114,3 +114,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Collins, G. S., et al. (2024). TRIPOD+AI statement. *BMJ*.
 - Bzdok, D., & Yeo, B. T. (2017). Inference in the age of big data. *NeuroImage*, 155, 549–564.
 - Steyerberg, E. W. (2019). *Clinical Prediction Models* (2nd ed.). Springer.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

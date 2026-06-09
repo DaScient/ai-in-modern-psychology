@@ -108,3 +108,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Demerouti, E., et al. (2001). The Job Demands–Resources model of burnout. *J. Appl. Psychol.*
 - Ajunwa, I., Crawford, K., & Schultz, J. (2017). Limitless worker surveillance. *California Law Review*.
 - Bernstein, E. S. (2017). Making transparency transparent. *Academy of Management Annals*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

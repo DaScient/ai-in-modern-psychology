@@ -126,3 +126,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Marcus, G. (2003). *The Algebraic Mind*. MIT Press.
 - Yamins, D. L. K., & DiCarlo, J. J. (2016). Using goal-driven deep learning models to understand sensory cortex. *Nature Neuroscience*, 19, 356–365.
 - Garcez, A., & Lamb, L. (2023). Neurosymbolic AI: The 3rd wave. *Artificial Intelligence Review*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

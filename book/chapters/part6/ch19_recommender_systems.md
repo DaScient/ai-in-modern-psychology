@@ -110,3 +110,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Sunstein, C. R. (2014). *Choosing Not to Choose*. Oxford University Press.
 - Milli, S., et al. (2023). Engagement, user satisfaction, and the amplification of divisive content on social media. *PNAS*.
 - Helberger, N., Karppinen, K., & D'Acunto, L. (2018). Exposure diversity as a design principle for recommender systems.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

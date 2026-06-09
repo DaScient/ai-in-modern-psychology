@@ -100,3 +100,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Kessler, R. C., et al. (2017). Developing a practical suicide risk prediction model for targeting high-risk patients in the Veterans Health Administration. *International Journal of Methods in Psychiatric Research*.
 - Vickers, A. J., & Elkin, E. B. (2006). Decision-curve analysis. *Medical Decision Making*, 26(6), 565–574.
 - Char, D. S., et al. (2018). Implementing machine learning in health care — addressing ethical challenges. *NEJM*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

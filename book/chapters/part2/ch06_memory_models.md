@@ -104,3 +104,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Wixted, J. T. (2004). The psychology and neuroscience of forgetting. *Annual Review of Psychology*, 55, 235–269.
 - Murre, J. M. J., & Dros, J. (2015). Replication and analysis of Ebbinghaus' forgetting curve. *PLoS ONE*, 10(7), e0120644.
 - Pavlik, P. I., & Anderson, J. R. (2005). Practice and forgetting effects on vocabulary memory. *Cognitive Science*, 29(4), 559–586.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

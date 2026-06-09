@@ -137,3 +137,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Boden, M. A. (2006). *Mind as Machine: A History of Cognitive Science*. Oxford University Press.
 - Marcus, G., & Davis, E. (2019). *Rebooting AI: Building Artificial Intelligence We Can Trust*. Pantheon.
 
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

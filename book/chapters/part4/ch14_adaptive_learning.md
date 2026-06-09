@@ -104,3 +104,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Piech, C., et al. (2015). Deep knowledge tracing. *NeurIPS*.
 - Beck, J. E., & Chang, K.-min (2007). Identifiability: A fundamental problem of student modeling. *UMAP*.
 - VanLehn, K. (2011). The relative effectiveness of human tutoring, intelligent tutoring systems, and other tutoring systems. *Educational Psychologist*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

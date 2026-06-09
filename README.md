@@ -110,3 +110,7 @@ Built upon the foundations of the original Barnes & Noble Exclusive Collection. 
 ---
 
 Start exploring → [the living book](https://DaScient.github.io/ai-in-modern-psychology).
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

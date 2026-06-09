@@ -119,3 +119,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Topol, E. J. (2019). High-performance medicine: The convergence of human and artificial intelligence. *Nature Medicine*.
 - Marcus, G., & Davis, E. (2019). *Rebooting AI*. Pantheon.
 - Stiefel, K. M., & Coggan, J. S. (2023). The energy challenges of artificial superintelligence. *Frontiers in Artificial Intelligence*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

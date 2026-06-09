@@ -122,3 +122,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Vickers, A. J., & Elkin, E. B. (2006). Decision-curve analysis. *Med Decis Making*, 26, 565–574.
 - Wong, A., et al. (2021). External validation of a widely implemented proprietary sepsis prediction model. *JAMA Internal Medicine*.
 - Sittig, D. F., & Singh, H. (2010). A new socio-technical model for studying health information technology. *Quality and Safety in Health Care*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

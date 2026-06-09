@@ -110,3 +110,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Granovetter, M. (1978). Threshold models of collective behavior. *Am. J. Sociol.*
 - Christakis, N. A., & Fowler, J. H. (2007). The spread of obesity in a large social network over 32 years. *NEJM*.
 - Leskovec, J., et al. (2007). Cost-effective outbreak detection in networks. *KDD*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

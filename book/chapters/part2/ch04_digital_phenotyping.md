@@ -115,3 +115,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Mohr, D. C., Zhang, M., & Schueller, S. M. (2017). Personal sensing: Understanding mental health using ubiquitous sensors and machine learning. *Annual Review of Clinical Psychology*, 13, 23–47.
 - Phillips, A. J. K., et al. (2017). Irregular sleep/wake patterns are associated with poorer academic performance. *Scientific Reports*, 7, 3216.
 - Torous, J., et al. (2020). The growing field of digital psychiatry: Current evidence and the future of apps, social media, chatbots, and virtual reality. *World Psychiatry*, 19(3), 318–319.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

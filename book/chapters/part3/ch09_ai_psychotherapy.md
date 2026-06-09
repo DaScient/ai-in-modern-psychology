@@ -103,3 +103,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Inkster, B., Sarda, S., & Subramanian, V. (2018). An empathy-driven, conversational AI agent. *JMIR mHealth & uHealth*.
 - Fitzpatrick, K. K., Darcy, A., & Vierhile, M. (2017). Woebot: A randomized controlled trial. *JMIR Mental Health*.
 - Torous, J., & Blease, C. (2024). Generative AI in mental health care: Risks and roles. *World Psychiatry*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>
