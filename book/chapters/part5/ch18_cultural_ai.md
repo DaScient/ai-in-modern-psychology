@@ -104,3 +104,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Bender, E. M., et al. (2021). On the dangers of stochastic parrots. *FAccT*.
 - Sambasivan, N., et al. (2021). Re-imagining algorithmic fairness in India and beyond. *FAccT*.
 - Gelfand, M. (2018). *Rule Makers, Rule Breakers*. Scribner.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

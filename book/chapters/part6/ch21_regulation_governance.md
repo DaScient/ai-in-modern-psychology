@@ -104,3 +104,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Gebru, T., et al. (2021). Datasheets for datasets. *CACM*.
 - NIST AI Risk Management Framework 1.0 (2023).
 - FDA (2023). *Predetermined Change Control Plans for AI/ML-Enabled Device Software Functions* (draft guidance).
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

@@ -116,3 +116,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Chouldechova, A. (2017). Fair prediction with disparate impact. *Big Data*, 5(2).
 - Raghavan, M., et al. (2020). Mitigating bias in algorithmic hiring. *FAT* '20.
 - Selbst, A. D., et al. (2019). Fairness and abstraction in sociotechnical systems. *FAT* '19.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

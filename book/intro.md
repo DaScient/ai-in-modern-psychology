@@ -40,3 +40,7 @@ Launch a notebook immediately without any installation:
   note={Companion repository: https://github.com/DaScient/ai-in-modern-psychology}
 }
 ```
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

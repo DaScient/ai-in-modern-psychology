@@ -109,3 +109,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Chouldechova, A. (2017). Fair prediction with disparate impact. *Big Data*.
 - Obermeyer, Z., et al. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. *Science*, 366, 447–453.
 - Mitchell, S., Potash, E., Barocas, S., D'Amour, A., & Lum, K. (2021). Algorithmic fairness: Choices, assumptions, and definitions. *Annual Review of Statistics*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

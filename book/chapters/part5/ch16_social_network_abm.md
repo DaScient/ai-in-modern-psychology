@@ -91,3 +91,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Hegselmann, R., & Krause, U. (2002). Opinion dynamics and bounded confidence. *JASSS*.
 - Bakshy, E., Messing, S., & Adamic, L. A. (2015). Exposure to ideologically diverse news on Facebook. *Science*, 348, 1130–1132.
 - Guess, A., et al. (2023). How do social media feed algorithms affect attitudes and behavior? *Science*, 381, 398–404.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

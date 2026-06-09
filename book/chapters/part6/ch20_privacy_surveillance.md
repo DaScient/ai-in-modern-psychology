@@ -109,3 +109,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Dwork, C., & Roth, A. (2014). The algorithmic foundations of differential privacy. *Foundations and Trends in TCS*.
 - McMahan, B., et al. (2017). Communication-efficient learning of deep networks from decentralized data. *AISTATS*.
 - Solove, D. J. (2008). *Understanding Privacy*. Harvard University Press.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

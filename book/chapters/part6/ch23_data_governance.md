@@ -128,3 +128,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Open Data Institute (2018). Data trusts: Lessons from three pilots.
 - Carroll, S. R., et al. (2020). The CARE principles for Indigenous data governance. *Data Science Journal*.
 - Walter, M., Kukutai, T., Carroll, S. R., & Rodriguez-Lonebear, D. (Eds.). (2020). *Indigenous Data Sovereignty and Policy*. Routledge.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>

@@ -110,3 +110,7 @@ This chapter is part of *AI in Modern Psychology* (DaScient Press, 2026). The bo
 - Tackman, A. M., et al. (2019). Depression, negative emotionality, and self-referential language. *J. Pers. Soc. Psychol.*, 116(5), 817–834.
 - Coppersmith, G., et al. (2018). Natural language processing of social media as screening for suicide risk. *Biomedical Informatics Insights*.
 - Boyd, R. L., & Schwartz, H. A. (2021). Natural language analysis and the psychology of verbal behavior. *Journal of Language and Social Psychology*.
+
+---
+
+<p align="center"><sub>💛 Support <a href="https://cash.app/dascient/">DaScient, Inc.</a> — a non-profit promoting accessible intelligence and community learning.</sub></p>
